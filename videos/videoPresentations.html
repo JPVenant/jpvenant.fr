@@ -1,0 +1,48 @@
+  <!--====== VIDEO PRESENTATIONS ======-->
+  <section class="video-area video-one">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-10">
+          <div class="video-title text-center">
+            <h2 class="text-white"><img src="videos/camera-video.svg" alt="icone vidéo"> Visite en vidéo</h2>
+            <p class="text-lg">
+              Mieux qu'un long texte, Jean-Philippe vous présente les grands principes de notre agence digitale !
+            </p>
+          </div>
+          <!-- video titre -->
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="video-content text-center">
+            <img src="videos/imageVideoPresentation.jpg" alt="Video" />
+            <a class="video-popup glightbox" href="https://www.youtube.com/watch?v=NJbXptdalP0">
+              <img src="videos\play.svg" alt="bouton play">
+            </a>
+          </div>
+         <p class="text">Photo by <a href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank" style="color: #f20505;">Fotis Fotopoulos</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank" style="color: #f20505;">Unsplash</a></p>
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+  <!--====== FIN VIDEO PRESENTATIONS======-->
+
+
+
+  <!--====== LES SCRIPTS ======-->
+  <script src="assets\js\glightbox.min.js"></script>
+
+  <script>
+    //========= glightbox
+    const myGallery = GLightbox({
+      href: "videos/videoPresentations.mp4",
+      type: "video",
+      source: "local", //vimeo, youtube or local
+      width: 900,
+      autoplayVideos: true,
+    });
+  </script>
+  <!--====== FIN DES SCRIPTS ======-->
