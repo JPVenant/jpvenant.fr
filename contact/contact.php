@@ -20,7 +20,7 @@
   </div>
   <!--======  FIN du titre ======-->
   <div class="container">
-    <form method="post">
+    <form method="post" enctype="multipart/form-data" >
       <div>
         <label for="pseudo">Nom</label>
         <input type="text" name="name" placeholder="Durand" required>
@@ -50,6 +50,10 @@
         <label for="pass">Message</label>
         <textarea name="message" placeholder="Bonjour, je viens par ici pour vous dire que je vous aime !"></textarea>
       </div><br>
+    <div>
+        <label for="fichier">Fichier</label>
+        <input type="file" name="fichier" id="fichier" multiple>
+      </div>
       <div>
         <button class="button" type="submit" name="submit">Envoyer</button>
       </div>
