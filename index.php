@@ -1,29 +1,3 @@
-<!-- PHP FORMULAIRE DE CONTACT -->
-<?php
-
-    $msg='<p style="font-weight: bold; color: #f20505;">Votre message a bien été envoyé.</p>';
-    if (isset($_POST['message'])) {
-        $entete  = 'MIME-Version: 1.0' . "\r\n";
-        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $entete .= 'From: jpvenant@jpvenant.fr' . "\r\n";
-        $entete .= 'Reply-to: ' . $_POST['email'];
-       
-
-        $message = '<h1>Message envoyé depuis la page Contact de jpvenant.fr</h1>
-        <p><b>Email : </b>' . $_POST['email'] . '<br>
-        <b>Nom : </b>' . $_POST['name'] . '<br>
-        <b>Prénom : </b>' . $_POST['firstname'] . '<br>
-        <b>Sujet : </b>' . $_POST['subject'] . '<br>
-        <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
-
-        $retour = mail('contact@jpvenant.fr', 'Envoi depuis jpvenant.fr', $message, $entete);
-         
-        // Appel le header en paramêtres d'URL
-        header("location: ?msg=send#contact");   
-    }
-    ?>
-    <!-- FIN PHP DU FORMULAIRE DE CONTACT -->
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -106,7 +80,7 @@
 <!-- LE T'CHAT -->
 <?php include("tchat/tchat.html"); ?>
 <!-- CONTACTEZ-NOUS -->
-<?php include("contact/contact.php"); ?>
+<?php include("contact/index.php") ?>
 <!-- FOOTER -->
 <?php include("footers/footer.php"); ?>
 

@@ -1,0 +1,249 @@
+/* ====== TITRE EN FILIGRANE 2 ====== */
+.titre-filigane-2 {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+    margin-top: 12px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .titre-filigane-2 {
+      margin-bottom: 45px;
+    }
+  }
+  @media (max-width: 767px) {
+    .titre-filigane-2 {
+      margin-bottom: 35px;
+    }
+  }
+  .titre-filigane-2 span {
+    text-transform: uppercase;
+    color: var(--primary);
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  @media (max-width: 767px) {
+    .titre-filigane-2 span {
+      margin-bottom: 15px;
+    }
+  }
+  .titre-filigane-2 h2 {
+    margin-bottom: 15px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .titre-filigane-2 h2 {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .titre-filigane-2 h2 {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+    }
+  }
+  .titre-filigane-2 h3 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: var(--gray-3);
+    z-index: -1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--gray-3);
+    opacity: 0.2;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .titre-filigane-2 h3 {
+      font-size: 3.3rem;
+      line-height: 3.5rem;
+      top: -18px;
+    }
+  }
+  @media (max-width: 767px) {
+    .titre-filigane-2 h3 {
+      font-size: 2.7rem;
+      line-height: 3.2rem;
+      top: -17px;
+    }
+  }
+  .titre-filigane-2 p {
+    color: var(--dark-3);
+  }
+  /* ====== FIN DU TITRE EN FILIGRANE 2 ====== */
+
+/* ====== FORMULAIRE DE CONTACT */
+.contact-area {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background: #0d0d0d;
+    color: var(--dark-3);
+  }
+  .contact-area .mt-15 {
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 767px) {
+    .contact-area .section-title .title {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+  
+  .contactez-nous {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+    
+  }
+  
+  .contactez-nous > h1 {
+    font-weight: 500;
+    color: #f20505;
+  }
+  
+  .contactez-nous > p {
+    font-weight: 300;
+  }
+  
+  form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+  }
+  
+  form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+  
+  form div > input,
+  form div > select,
+  form div > textarea {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  form div > input,
+  form div > select {
+    height: 50px;
+    padding-left: 30px;
+  }
+  
+  form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+  
+  form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+  }
+  
+  form div > input::placeholder,
+  form div > textarea::placeholder {
+    color: #d4d4d4;
+  }
+  
+  form div > select:invalid {
+    color: #f20505;
+  }
+  
+  form div > select option {
+    background: #f5f5f5;
+    color: #0d0d0d;
+  }
+  
+  form div:last-child {
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  form button {
+    width: 400px;
+    max-width: 200px;
+    background: #f20505;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #0d0d0d;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+  
+  .button:hover{
+    background-color: #f5f5f5;
+    color: #0d0d0d;
+  }
+
+  .button-2 {
+    width: 400px;
+    max-width: 200px;
+    background: #13d527;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #0d0d0d;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+
+  .button-2:hover{
+    background-color: #f5f5f5;
+    color: #0d0d0d;
+  }
+
+  .successMessage{
+    background-color: #13d527;
+    border: #2b5a2d 1px solid;
+    padding: 5px 9px;
+    color: #262b26;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.errorMessage{
+    background-color: #e64141;
+    border: #da1414 1px solid;
+    padding: 5px 10px;
+    color: #fdf7f7;
+    border-radius: 4px;
+}
+.info{
+    font-size: 0.9em;
+    color: #d67262;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+  /* ====== FIN DU FORMULAIRE DE CONTACT ====== */
