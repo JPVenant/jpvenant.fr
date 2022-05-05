@@ -5,16 +5,16 @@
  */
 
 // Localisation de la BDD
-define('HOST', 'aj3nk.myd.infomaniak.com');
+define('HOST', 'localhost');
 
 // Nom d'utilisateur
-define('USER', 'aj3nk_jpvenant78');
+define('USER', 'root');
 
 // Mot de passe
-define('PASSWD', 'JPVenant43');
+define('PASSWD', '');
 
 // Nom de la base de donnée
-define('DBNAME', 'aj3nk_tchat');
+define('DBNAME', 'tchat');
 
 try {
 	$db = new PDO("mysql:host=". HOST .";dbname=". DBNAME, USER, PASSWD, [
