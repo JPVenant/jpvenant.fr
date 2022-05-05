@@ -6,7 +6,7 @@ if(!empty($_POST["send"])) {
 	$subject = $_POST["subject"];
 	$message = $_POST["message"];
 
-	$connexion = mysqli_connect("aj3nk.myd.infomaniak.com", "aj3nk_jpvenant78", "JPVenant43", "aj3nk_contact_form") or die("Erreur de connexion: " . mysqli_error($connexion));
+	$connexion = mysqli_connect("localhost", "root", "", "contact_form") or die("Erreur de connexion: " . mysqli_error($connexion));
 	$result = mysqli_query($connexion, "INSERT INTO contact (name, email, subject, message) VALUES ('" . $name. "', '" . $email. "','" . $subject. "','" . $message. "')");
 	if($result){
 		$db_msg = "Vos informations de contact sont enregistrées avec succés.";
